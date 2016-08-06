@@ -1585,9 +1585,11 @@ scrollbar > contents > trough > slider {
 }
 scrollbar.horizontal > contents > trough > slider {
 	background: linear-gradient(to bottom, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
+	min-width: 25px;
 }
 scrollbar.vertical > contents > trough > slider {
 	background: linear-gradient(to right, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
+	min-height: 25px;
 }
 
 
