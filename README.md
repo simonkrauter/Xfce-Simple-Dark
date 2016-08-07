@@ -4,8 +4,8 @@
 *Simple Dark* is a dark theme for Xfce. 
 It contains styles for widgets and window titles.
 
-The GTK 2 widget theme is based on https://github.com/vkuzel/Xfce-darkness .  
-The GTK 3 widget theme is based on https://github.com/horst3180/vertex-theme .  
+The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .  
+The GTK 3.2 widget theme is based on https://github.com/horst3180/vertex-theme .  
 The window title theme is based on Makulu Black.  
 
 Installation
