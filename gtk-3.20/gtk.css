@@ -1586,9 +1586,11 @@ scrollbar slider {
 scrollbar.horizontal slider {
 	background: linear-gradient(to bottom, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
 	min-width: 25px;
+	min-height: 18px;
 }
 scrollbar.vertical slider {
 	background: linear-gradient(to right, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
+	min-width: 18px;
 	min-height: 25px;
 }
 
