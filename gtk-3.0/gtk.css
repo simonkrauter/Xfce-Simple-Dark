@@ -143,12 +143,6 @@ GtkClutterOffscreen {
 	background-color: @bg_insensitive;
 }
 
-/* I can't style focus event properly by using this special class.
-*:focused {
-	color: inherit;
-	background-color: alpha(@base_selected, 0.3);
-}*/
-
 *:insensitive:active {
 	color: inherit;
 	background-color: @bg_insensitive_active;
@@ -183,13 +177,6 @@ GtkSwitch {
 	border-color: shade(@bg_normal, 0.7);
 }
 
-.button,
-.frame,
-.notebook,
-GtkScale.slider,
-GtkSwitch {
-}
-
 .button:insensitive,
 .frame:insensitive,
 .notebook:insensitive,
@@ -222,7 +209,6 @@ GtkSwitch:insensitive {
 
 .button {
 	padding: 2px 4px 2px 4px;
-
 	background-image: -gtk-gradient (linear, left top, left bottom, from(shade(@bg_normal, 1.05)), to(shade(@bg_normal, 0.85)));
 }
 
@@ -245,18 +231,6 @@ GtkSwitch:insensitive {
 
 .button:insensitive:active {
 	background-image: -gtk-gradient (linear, left top, left bottom, from(shade(@bg_insensitive_active, 1.05)), to(shade(@bg_insensitive_active, 0.85)));
-}
-
-/****************
- * cell and row *
- ****************/
-
-.cell {
-
-}
-
-row {
-
 }
 
 row:selected {
@@ -324,12 +298,6 @@ GtkTextView:insensitive {
 	background-color: @base_insensitive;
 }
 
-.primary-toolbar .toolbar .entry.progressbar,
-.primary-toolbar.toolbar .entry.progressbar,
-.entry.progressbar {
-
-}
-
 /************
  * ComboBox *
  ************/
@@ -339,29 +307,16 @@ GtkComboBox.combobox-entry .entry {
 }
 
 /************
- * expander *
- ************/
-
-.expander {
-
-}
-
-/************
  * iconview *
  ************/
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
-	background-color: @bg_selected;
-
+	background: @bg_selected;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 3px;
 	border-color: shade(@bg_selected, 0.7);
-}
-
-.rubberband {
-
 }
 
 /*********
@@ -427,11 +382,6 @@ GtkLabel:insensitive {
 
 }
 
-.menuitem:insensitive,
-.menuitem *:insensitive {
-
-}
-
 .menubar {
 	padding: 2px;
 
@@ -463,10 +413,6 @@ GtkLabel:insensitive {
 /*******************
  * Notebook & Tabs *
  *******************/
-
-.notebook {
-
-}
 
 .notebook tab {
 	padding: 3px;
@@ -520,14 +466,6 @@ GtkProgressBar.trough {
 	background-image: -gtk-gradient (linear, left top, left bottom, from (shade (@bg_selected,1.24)), to (shade (@bg_selected,1.18)));
 
 	border-width: 0;
-}
-
-.progressbar.vertical {
-
-}
-
-.progressbar.horizontal {
-
 }
 
 /************
@@ -732,11 +670,7 @@ GtkHandleBox {
 }
 
 GtkHandleBox .snap-edge {
-        background-image: -gtk-gradient (linear, left top, left bottom, from (shade (#00f, 0.99)), to (shade (#00f,0.9)));
-}
-
-GtkHandleBox.dock {
-
+  background-image: -gtk-gradient (linear, left top, left bottom, from (shade (#00f, 0.99)), to (shade (#00f,0.9)));
 }
 
 /***********
