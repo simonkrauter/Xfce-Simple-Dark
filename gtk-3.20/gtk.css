@@ -1578,16 +1578,16 @@ scrollbar {
 	border-radius: 2px;
 }
 
-scrollbar > contents > trough > slider {
+scrollbar slider {
   border: 1px solid @scrollbar_slider_border;
   border-radius: 1px;
   box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,0.4);
 }
-scrollbar.horizontal > contents > trough > slider {
+scrollbar.horizontal slider {
 	background: linear-gradient(to bottom, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
 	min-width: 25px;
 }
-scrollbar.vertical > contents > trough > slider {
+scrollbar.vertical slider {
 	background: linear-gradient(to right, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
 	min-height: 25px;
 }
