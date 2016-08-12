@@ -1358,9 +1358,6 @@ row:selected scale slider {
 row:selected scale slider:hover {
   background-image: -gtk-scaled(url("assets/slider-hover-selected-dark.png"), url("assets/slider-hover-selected-dark@2.png")); }
 
-row:selected scale slider:active {
-  background-image: -gtk-scaled(url("assets/slider-active-selected-dark.png"), url("assets/slider-active-selected-dark@2.png")); }
-
 row:selected scale slider:disabled {
   background-image: -gtk-scaled(url("assets/slider-insensitive-selected-dark.png"), url("assets/slider-insensitive-selected-dark@2.png")); }
 
