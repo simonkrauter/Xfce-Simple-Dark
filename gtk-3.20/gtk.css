@@ -123,7 +123,7 @@ entry {
   padding: 2px 8px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: @theme_fg_color;
-  background-image: linear-gradient(to bottom, @theme_base_color);
+  background-color: @theme_base_color;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
 	border: 1px solid @border_color; 
   border-radius: 2px;
@@ -150,28 +150,25 @@ entry {
     box-shadow: none; }
   entry:focus {
 		box-shadow: none;
-		border-color: @border_selected_color;
-    }
+		border-color: @border_selected_color;}
   entry:disabled {
 		color: @insensitive_fg_color;
-		background-image: linear-gradient(to bottom, @insensitive_bg_color); }
+		background-color: @insensitive_bg_color;
+    }
   entry.warning {
-    color: @warning_color;
-    background-image: linear-gradient(to bottom, #533b23); }
+    color: @warning_color;}
     entry.warning image {
       color: @warning_color; }
     entry.warning selection, entry.warning selection:focus {
       background-color: @warning_color; }
   entry.error {
-    color: @error_color;
-    background-image: linear-gradient(to bottom, #4b2223); }
+    color: @error_color;}
     entry.error image {
       color: @error_color; }
     entry.error selection, entry.error selection:focus {
       background-color: @error_color; }
   entry.search-missing {
-    color: @error_color;
-    background-image: linear-gradient(to bottom, #4b2223); }
+    color: @error_color;}
     entry.search-missing image {
       color: @error_color; }
     entry.search-missing selection, entry.search-missing selection:focus {
@@ -248,7 +245,6 @@ button {
     -gtk-icon-shadow: none; }
   button:disabled {
     color: @insensitive_fg_color;
-    background-image: linear-gradient(to bottom, @insensitive_bg_color);
     text-shadow: none;
     -gtk-icon-shadow: none; }
     button:disabled > label, button:disabled label {
@@ -289,15 +285,12 @@ button {
       background-image: linear-gradient(to bottom, #247246, #3aa96f); }
     button.suggested-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(64, 188, 124, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       button.suggested-action:disabled > image, button.suggested-action:disabled label {
         color: inherit; }
-      button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(64, 188, 124, 0.9)); }
-        button.suggested-action:disabled:active > image, button.suggested-action:disabled:active label, button.suggested-action:disabled:checked > image, button.suggested-action:disabled:checked label {
-          color: inherit; }
+      button.suggested-action:disabled:active > image, button.suggested-action:disabled:active label, button.suggested-action:disabled:checked > image, button.suggested-action:disabled:checked label {
+        color: inherit; }
   button.destructive-action {
     color: @theme_selected_fg_color;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -311,15 +304,12 @@ button {
       background-image: linear-gradient(to bottom, #bc2e2e, #e54a4a);  }
     button.destructive-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       button.destructive-action:disabled > image, button.destructive-action:disabled label {
         color: inherit; }
-      button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9)); }
-        button.destructive-action:disabled:active > image, button.destructive-action:disabled:active label, button.destructive-action:disabled:checked > image, button.destructive-action:disabled:checked label {
-          color: inherit; }
+      button.destructive-action:disabled:active > image, button.destructive-action:disabled:active label, button.destructive-action:disabled:checked > image, button.destructive-action:disabled:checked label {
+        color: inherit; }
   .stack-switcher > button {
     outline-offset: -3px; }
     .stack-switcher > button > label {
@@ -369,7 +359,6 @@ button {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); }
   .inline-toolbar toolbutton > button:disabled {
     color: @insensitive_fg_color;
-    background-image: linear-gradient(to bottom, @insensitive_bg_color);
     text-shadow: none;
     -gtk-icon-shadow: none; }
     .inline-toolbar toolbutton > button:disabled > label, .inline-toolbar toolbutton > button:disabled label {
@@ -583,7 +572,6 @@ headerbar,
     headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
       border-image: none;
       border-color: rgba(64, 251, 128, 0);
-      background-image: linear-gradient(to bottom, rgba(64, 251, 128, 0));
       box-shadow: none;
       padding-left: 10px;
       padding-right: 10px; }
@@ -1034,7 +1022,7 @@ scrollbar.vertical slider {
 
 
 switch {
-  font: 1;
+  font-size: 1px;
   min-width: 60px;
   min-height: 27px;
   margin: 0 -8px; }
@@ -1685,7 +1673,6 @@ placessidebar row {
   placessidebar row.sidebar-placeholder-row {
     padding: 0 8px;
     min-height: 2px;
-    background-image: linear-gradient(to top, #4e9a06);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
     color: @theme_selected_bg_color; }
@@ -1715,15 +1702,11 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to top, @border_color);
   background-size: 1px 1px; }
-  paned > separator:selected {
-    background-image: linear-gradient(to top, @theme_selected_bg_color); }
   paned > separator.wide {
     min-width: 5px;
     min-height: 5px;
     background-color: @theme_bg_color;
-    background-image: linear-gradient(to top, @border_color), linear-gradient(to top, @border_color);
     background-size: 1px 1px, 1px 1px; }
 
 paned.horizontal > separator {
@@ -1787,7 +1770,7 @@ popover.background.touch-selection, .csd popover.background.touch-selection {
   font: initial; }
 
 .monospace {
-  font: Monospace; }
+  font-family: Monospace; }
 
 button.circular, button.nautilus-circular-button.image-button,
 button.circular-button {
@@ -2086,13 +2069,16 @@ iconview.source-list:selected:focus,
 
 
 .h1 {
-  font: open sans 24px; }
+  font-size: 24px; 
+  font-family: open sans; }
 
 .h2 {
-  font: open sans light 18px; }
+  font-size: 18px;
+  font-family: open sans light; }
 
 .h3 {
-  font: open sans 11px; }
+  font-size: 11px;
+  font-family: open sans; }
 
 .h4,
 .category-label {
