@@ -8,6 +8,12 @@ The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-
 The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .  
 The window title theme is based on Makulu Black.  
 
+Screenshot
+------------
+
+![](https://raw.githubusercontent.com/trustable-code/Xfce-Simple-Dark/master/screenshot.png =500x)
+
+
 Installation
 ------------
 
