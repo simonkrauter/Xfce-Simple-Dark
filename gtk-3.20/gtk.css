@@ -998,29 +998,51 @@ notebook {
 
 
 scrollbar {
-	background: @scrollbar_color;
-	border: 1px solid @scrollbar_border;
-	border-radius: 2px;
+  background: @scrollbar_color;
+  border-width: 0; 
 }
-
+scrollbar.top, scrollbar.bottom, scrollbar.left, scrollbar.right {
+  border-bottom: 0px solid #b0b0b0; 
+}
 scrollbar slider {
-  border: 1px solid @scrollbar_slider_border;
-  border-radius: 1px;
-  box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,0.4);
+  margin: -1px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-clip: padding-box; 
+  min-width: 18px;
+  min-height: 18px;
 }
 scrollbar.horizontal slider {
 	background: linear-gradient(to bottom, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
-	min-width: 25px;
-	min-height: 18px;
 }
 scrollbar.vertical slider {
 	background: linear-gradient(to right, @scrollbar_slider_color_a, @scrollbar_slider_color_b);
-	min-width: 18px;
-	min-height: 25px;
 }
-
-
-
+scrollbar button {
+  padding: 0;
+  border-style: none;
+  border-radius: 0;
+  transition-property: min-height, min-width, color;
+  box-shadow: none;
+}
+scrollbar.vertical button.up {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up-dark.png"), url("assets/scrollarrow-up-dark@2.png")); }
+scrollbar.vertical button.down {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down-dark.png"), url("assets/scrollarrow-down-dark@2.png")); }
+scrollbar.vertical button.up:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up-insensitive-dark.png"), url("assets/scrollarrow-up-insensitive-dark@2.png")); }
+scrollbar.vertical button.down:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down-insensitive-dark.png"), url("assets/scrollarrow-down-insensitive-dark@2.png")); }
+scrollbar.horizontal button.up {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left-dark.png"), url("assets/scrollarrow-left-dark@2.png")); }
+scrollbar.horizontal button.down {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-dark.png"), url("assets/scrollarrow-right-dark@2.png")); }
+scrollbar.horizontal button.up:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left-insensitive-dark.png"), url("assets/scrollarrow-left-insensitive-dark@2.png")); }
+scrollbar.horizontal button.down:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-insensitive-dark.png"), url("assets/scrollarrow-right-insensitive-dark@2.png")); }
+    
+    
 switch {
   font-size: 1px;
   min-width: 60px;

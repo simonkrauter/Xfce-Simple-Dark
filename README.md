@@ -16,6 +16,13 @@ Installation
 3. Open *Window Manager* and select the theme.
 4. To use the theme for Geany, copy files from directory `geany` to `~/.config/geany/colorschemes/`
 
+How to turn off auto-hiding of scrollbars
+-----------------------------------------
+
+Add the following line to the file `~/.xprofile` respectively `~/.profile` and reboot:
+
+`export GTK_OVERLAY_SCROLLING=0`
+
 License
 -------
 
