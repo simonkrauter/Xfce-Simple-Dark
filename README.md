@@ -11,8 +11,7 @@ The window title theme is based on Makulu Black.
 Screenshot
 ------------
 
-![](https://raw.githubusercontent.com/trustable-code/Xfce-Simple-Dark/master/screenshot.png =500x)
-
+<a href="https://github.com/trustable-code/Xfce-Simple-Dark/blob/master/screenshot.png"><img src="https://raw.githubusercontent.com/trustable-code/Xfce-Simple-Dark/master/screenshot.png" width="500"></a>
 
 Installation
 ------------
