@@ -30,13 +30,13 @@ style "default"
 
     GtkEntry::cursor_aspect_ratio                = 0.1
     GtkEntry::cursor_aspect_ratio                = 0.1
-    
+
     xthickness             = 1
     ythickness             = 1
 
     base[ACTIVE]      = "#0A6891"
     base[INSENSITIVE] = "#303030"
-    base[NORMAL]      = "#121212"
+    base[NORMAL]      = "#161616"
     base[PRELIGHT]    = "#0A6891"
     base[SELECTED]    = "#0A6891"
 
@@ -84,7 +84,7 @@ style "default"
         scrollbarstyle      = 2     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
         sliderstyle         = 0     # 0 = nothing added, 1 = handles
         stepperstyle        = 1     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
-        toolbarstyle        = 1     # 0 = flat, 1 = glassy, 2 = gradient                
+        toolbarstyle        = 1     # 0 = flat, 1 = glassy, 2 = gradient
     }
 }
 widget_class "*"                   style "default"
@@ -121,8 +121,8 @@ style "progress" = "default"
     xthickness = 2
     ythickness = 2
 }
-widget_class "*GtkProgress*"       style "progress" 
-class "*GtkProgress*"              style "progress" 
+widget_class "*GtkProgress*"       style "progress"
+class "*GtkProgress*"              style "progress"
 
 style "menuitem" = "default"
 {
@@ -141,7 +141,7 @@ style "flat" = "default"
 widget_class "*HandleBox"         style "flat"
 
 # This is for the window borders (xfwm4 & metacity)
-# 
+#
 style "titlebar"
 {
     bg[SELECTED]      = "#1344A5"

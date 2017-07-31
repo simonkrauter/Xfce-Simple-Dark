@@ -1,12 +1,12 @@
-*Simple Dark*
+Xfce-Simple-Dark
 ===============
 
-*Simple Dark* is a dark theme for Xfce and Geany. 
+Xfce-Simple-Dark is a dark theme for Xfce and Geany.<br>
 It contains styles for widgets and window titles.
 
-The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .  
-The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .  
-The window title theme is based on Makulu Black.  
+The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .<br>
+The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .<br>
+The window title theme is based on Makulu Black.
 
 Screenshot
 ------------
@@ -31,4 +31,6 @@ Add the following line to the file `~/.xprofile` respectively `~/.profile` and r
 License
 -------
 
-GPL
+Copyright 2017 Simon Krauter<br>
+Xfce-Simple-Dark is FLOSS (free and open-source software).<br>
+All files in this repository are licensed under the [GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0) (GPLv3). 
