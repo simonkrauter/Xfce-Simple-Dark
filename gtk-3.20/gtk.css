@@ -193,6 +193,7 @@ button {
   outline-offset: -4px;
   color: @theme_fg_color;
   outline-color: rgba(243, 245, 243, 0.3);
+  background-image: linear-gradient(to bottom, @button_bg_color_a, @button_bg_color_b);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   border-radius: 2px;
@@ -228,6 +229,7 @@ button {
     outline-color: rgba(255, 255, 255, 0.3);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    background-image: none;
     background-color: @theme_selected_bg_color;
     transition-duration: 50ms; }
   button.flat:disabled, button.sidebar-button:disabled {
