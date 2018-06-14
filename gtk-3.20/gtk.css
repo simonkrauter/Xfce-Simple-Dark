@@ -193,7 +193,6 @@ button {
   outline-offset: -4px;
   color: @theme_fg_color;
   outline-color: rgba(243, 245, 243, 0.3);
-  background-image: linear-gradient(to bottom, @button_bg_color_a, @button_bg_color_b);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   border-radius: 2px;
@@ -221,19 +220,15 @@ button {
   button:focus {
     border-color: @border_selected_color; }
   button:hover {
-    color: @theme_fg_color;
-    outline-color: rgba(243, 245, 243, 0.3);
-    background-image: linear-gradient(to bottom, #5e6460, #393B3A);
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 10px 1px rgba(255, 255, 255, 0.15);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     -gtk-icon-effect: highlight; }
   button:active, button:checked {
     color: @theme_selected_fg_color;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-image: linear-gradient(to bottom, #242525, #373A38);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: @theme_selected_bg_color;
     transition-duration: 50ms; }
   button.flat:disabled, button.sidebar-button:disabled {
     border-color: transparent;
