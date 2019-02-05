@@ -30,6 +30,8 @@ style "default"
 
     GtkEntry::cursor_aspect_ratio                = 0.1
     GtkEntry::cursor_aspect_ratio                = 0.1
+    
+    GtkNotebook::tab-curvature = 20 # min width
 
     xthickness             = 1
     ythickness             = 1

@@ -19,7 +19,7 @@
 @define-color scrollbar_slider_color_a #9B9B9B;
 @define-color scrollbar_slider_color_b #818181;
 @define-color button_bg_color_a #4f5350;
-@define-color button_bg_color_b #343634; 
+@define-color button_bg_color_b #343634;
 
 
 * {
@@ -125,7 +125,7 @@ entry {
   color: @theme_fg_color;
   background-color: @theme_base_color;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
-	border: 1px solid @border_color; 
+	border: 1px solid @border_color;
   border-radius: 2px;
   caret-color: currentColor; }
   entry image {
@@ -221,19 +221,16 @@ button {
   button:focus {
     border-color: @border_selected_color; }
   button:hover {
-    color: @theme_fg_color;
-    outline-color: rgba(243, 245, 243, 0.3);
-    background-image: linear-gradient(to bottom, #5e6460, #393B3A);
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 10px 1px rgba(255, 255, 255, 0.15);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     -gtk-icon-effect: highlight; }
   button:active, button:checked {
     color: @theme_selected_fg_color;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-image: linear-gradient(to bottom, #242525, #373A38);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: none;
+    background-color: @theme_selected_bg_color;
     transition-duration: 50ms; }
   button.flat:disabled, button.sidebar-button:disabled {
     border-color: transparent;
@@ -535,7 +532,7 @@ headerbar,
     color: @theme_selected_fg_color;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
-    
+
   headerbar .right separator.titlebutton,
   headerbar .left:dir(rtl) separator.titlebutton, .titlebar:not(headerbar) .right separator.titlebutton, .titlebar:not(headerbar) .left:dir(rtl) separator.titlebutton {
     margin-left: 4px;
@@ -555,7 +552,7 @@ headerbar,
       color: @theme_selected_fg_color;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
     headerbar.selection-mode .subtitle, .selection-mode.titlebar:not(headerbar) .subtitle {
-      color: @theme_selected_fg_color; } 
+      color: @theme_selected_fg_color; }
     headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
       border-image: none;
       border-color: rgba(64, 251, 128, 0);
@@ -688,7 +685,7 @@ treeview.view {
     box-shadow: inset 0 1px @theme_selected_bg_color;
     text-shadow: none;
     -gtk-icon-shadow: none; }
-    
+
   treeview.view header button {
     min-height: 0;
     min-width: 0;
@@ -986,16 +983,16 @@ notebook {
 
 scrollbar {
   background: @scrollbar_color;
-  border-width: 0; 
+  border-width: 0;
 }
 scrollbar.top, scrollbar.bottom, scrollbar.left, scrollbar.right {
-  border-bottom: 0px solid #b0b0b0; 
+  border-bottom: 0px solid #b0b0b0;
 }
 scrollbar slider {
   margin: -1px;
   border: 1px solid transparent;
   border-radius: 0px;
-  background-clip: padding-box; 
+  background-clip: padding-box;
   min-width: 18px;
   min-height: 18px;
 }
@@ -1013,23 +1010,23 @@ scrollbar button {
   box-shadow: none;
 }
 scrollbar.vertical button.up {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up-dark.png"), url("assets/scrollarrow-up-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up.png"), url("assets/scrollarrow-up@2.png")); }
 scrollbar.vertical button.down {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down-dark.png"), url("assets/scrollarrow-down-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down.png"), url("assets/scrollarrow-down@2.png")); }
 scrollbar.vertical button.up:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up-insensitive-dark.png"), url("assets/scrollarrow-up-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up-insensitive.png"), url("assets/scrollarrow-up-insensitive@2.png")); }
 scrollbar.vertical button.down:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down-insensitive-dark.png"), url("assets/scrollarrow-down-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-down-insensitive.png"), url("assets/scrollarrow-down-insensitive@2.png")); }
 scrollbar.horizontal button.up {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left-dark.png"), url("assets/scrollarrow-left-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left.png"), url("assets/scrollarrow-left@2.png")); }
 scrollbar.horizontal button.down {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-dark.png"), url("assets/scrollarrow-right-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right.png"), url("assets/scrollarrow-right@2.png")); }
 scrollbar.horizontal button.up:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left-insensitive-dark.png"), url("assets/scrollarrow-left-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-left-insensitive.png"), url("assets/scrollarrow-left-insensitive@2.png")); }
 scrollbar.horizontal button.down:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-insensitive-dark.png"), url("assets/scrollarrow-right-insensitive-dark@2.png")); }
-    
-    
+  -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-insensitive.png"), url("assets/scrollarrow-right-insensitive@2.png")); }
+
+
 switch {
   font-size: 1px;
   min-width: 60px;
@@ -1047,45 +1044,45 @@ switch {
     box-shadow: none; }
 
 switch {
-  background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
 
 switch slider {
-  background-image: -gtk-scaled(url("assets/switch-slider-dark.png"), url("assets/switch-slider-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-slider.png"), url("assets/switch-slider@2.png")); }
 
 switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-dark.png"), url("assets/switch-active-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); }
 
 switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"), url("assets/switch-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-insensitive.png"), url("assets/switch-insensitive@2.png")); }
 
 switch slider:disabled {
-  background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"), url("assets/switch-slider-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-slider-insensitive.png"), url("assets/switch-slider-insensitive@2.png")); }
 
 switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"), url("assets/switch-active-insensitive@2.png")); }
 
 switch {
-  background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
 
 switch slider {
-  background-image: -gtk-scaled(url("assets/switch-slider-dark.png"), url("assets/switch-slider-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-slider.png"), url("assets/switch-slider@2.png")); }
 
 switch:checked {
-  background-image: -gtk-scaled(url("assets/switch-active-dark.png"), url("assets/switch-active-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); }
 
 switch:disabled {
-  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"), url("assets/switch-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-insensitive.png"), url("assets/switch-insensitive@2.png")); }
 
 switch slider:disabled {
-  background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"), url("assets/switch-slider-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-slider-insensitive.png"), url("assets/switch-slider-insensitive@2.png")); }
 
 switch:checked:disabled {
-  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"), url("assets/switch-active-insensitive@2.png")); }
 
 
 check,
 treeview.check {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:selected, iconview check:selected,
@@ -1095,11 +1092,11 @@ treeview.check:selected:focus,
 menuitem check:hover,
 row:selected check {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected-dark.png"), url("assets/checkbox-unchecked-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected@2.png")); }
 
 check:disabled,
 treeview.check:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-unchecked-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:disabled:selected, iconview check:disabled:selected,
@@ -1109,11 +1106,11 @@ treeview.check:disabled:selected:focus,
 menuitem check:disabled:hover,
 row:selected check:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-selected-dark.png"), url("assets/checkbox-unchecked-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-selected.png"), url("assets/checkbox-unchecked-insensitive-selected@2.png")); }
 
 check:indeterminate,
 treeview.check:indeterminate {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected-dark.png"), url("assets/checkbox-mixed-selected-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:indeterminate:selected, iconview check:indeterminate:selected,
@@ -1123,11 +1120,11 @@ treeview.check:indeterminate:selected:focus,
 menuitem check:indeterminate:hover,
 row:selected check:indeterminate {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected-dark.png"), url("assets/checkbox-mixed-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png")); }
 
 check:indeterminate:disabled,
 treeview.check:indeterminate:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"), url("assets/checkbox-mixed-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:indeterminate:disabled:selected, iconview check:indeterminate:disabled:selected,
@@ -1137,11 +1134,11 @@ treeview.check:indeterminate:disabled:selected:focus,
 menuitem check:indeterminate:disabled:hover,
 row:selected check:indeterminate:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-selected-dark.png"), url("assets/checkbox-mixed-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-selected.png"), url("assets/checkbox-mixed-insensitive-selected@2.png")); }
 
 check:checked,
 treeview.check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"), url("assets/checkbox-checked-selected-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:checked:selected, iconview check:checked:selected,
@@ -1151,11 +1148,11 @@ treeview.check:checked:selected:focus,
 menuitem check:checked:hover,
 row:selected check:checked {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"), url("assets/checkbox-checked-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
 
 check:checked:disabled,
 treeview.check:checked:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"), url("assets/checkbox-checked-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view check:checked:disabled:selected, iconview check:checked:disabled:selected,
@@ -1165,11 +1162,11 @@ treeview.check:checked:disabled:selected:focus,
 menuitem check:checked:disabled:hover,
 row:selected check:checked:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-selected-dark.png"), url("assets/checkbox-checked-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-selected.png"), url("assets/checkbox-checked-insensitive-selected@2.png")); }
 
 radio,
 treeview.radio {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"), url("assets/radio-unchecked@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:selected, iconview radio:selected,
@@ -1179,11 +1176,11 @@ treeview.radio:selected:focus,
 menuitem radio:hover,
 row:selected radio {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected-dark.png"), url("assets/radio-unchecked-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected@2.png")); }
 
 radio:disabled,
 treeview.radio:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"), url("assets/radio-unchecked-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:disabled:selected, iconview radio:disabled:selected,
@@ -1193,11 +1190,11 @@ treeview.radio:disabled:selected:focus,
 menuitem radio:disabled:hover,
 row:selected radio:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-selected-dark.png"), url("assets/radio-unchecked-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-selected.png"), url("assets/radio-unchecked-insensitive-selected@2.png")); }
 
 radio:indeterminate,
 treeview.radio:indeterminate {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected-dark.png"), url("assets/radio-mixed-selected-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:indeterminate:selected, iconview radio:indeterminate:selected,
@@ -1207,11 +1204,11 @@ treeview.radio:indeterminate:selected:focus,
 menuitem radio:indeterminate:hover,
 row:selected radio:indeterminate {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected-dark.png"), url("assets/radio-mixed-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png")); }
 
 radio:indeterminate:disabled,
 treeview.radio:indeterminate:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"), url("assets/radio-mixed-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:indeterminate:disabled:selected, iconview radio:indeterminate:disabled:selected,
@@ -1221,11 +1218,11 @@ treeview.radio:indeterminate:disabled:selected:focus,
 menuitem radio:indeterminate:disabled:hover,
 row:selected radio:indeterminate:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-selected-dark.png"), url("assets/radio-mixed-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-selected.png"), url("assets/radio-mixed-insensitive-selected@2.png")); }
 
 radio:checked,
 treeview.radio:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected-dark.png"), url("assets/radio-checked-selected-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:checked:selected, iconview radio:checked:selected,
@@ -1235,11 +1232,11 @@ treeview.radio:checked:selected:focus,
 menuitem radio:checked:hover,
 row:selected radio:checked {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected-dark.png"), url("assets/radio-checked-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png")); }
 
 radio:checked:disabled,
 treeview.radio:checked:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"), url("assets/radio-checked-insensitive@2.png"));
   -gtk-icon-shadow: none; }
 
 .view radio:checked:disabled:selected, iconview radio:checked:disabled:selected,
@@ -1249,14 +1246,14 @@ treeview.radio:checked:disabled:selected:focus,
 menuitem radio:checked:disabled:hover,
 row:selected radio:checked:disabled {
   background: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected-dark.png"), url("assets/radio-checked-insensitive-selected-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png")); }
 
 .view.content-view.check:not(.list), iconview.content-view.check:not(.list) {
-  -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-unchecked-dark.png"), url("assets/grid-selection-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-unchecked.png"), url("assets/grid-selection-unchecked@2.png"));
   background-color: transparent; }
 
 .view.content-view.check:checked:not(.list), iconview.content-view.check:checked:not(.list) {
-  -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-checked-dark.png"), url("assets/grid-selection-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-checked.png"), url("assets/grid-selection-checked@2.png"));
   background-color: transparent; }
 
 checkbutton.text-button, radiobutton.text-button {
@@ -1330,10 +1327,10 @@ scale {
   scale.fine-tune slider {
     margin: -4px; }
 	scale trough {
-		background: #1E1E1E; 
+		background: #1E1E1E;
 		border-radius: 2px; }
 	scale trough highlight {
-		background: @theme_selected_bg_color; 
+		background: @theme_selected_bg_color;
 		border-radius: 2px; }
   scale slider {
     min-width: 19px;
@@ -1341,22 +1338,22 @@ scale {
     margin: -6px; }
 
 scale slider {
-  background-image: -gtk-scaled(url("assets/slider-dark.png"), url("assets/slider-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider.png"), url("assets/slider@2.png")); }
 
 scale slider:hover {
-  background-image: -gtk-scaled(url("assets/slider-hover-dark.png"), url("assets/slider-hover-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider-hover.png"), url("assets/slider-hover@2.png")); }
 
 scale slider:disabled {
-  background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"), url("assets/slider-insensitive-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider-insensitive.png"), url("assets/slider-insensitive@2.png")); }
 
 row:selected scale slider {
-  background-image: -gtk-scaled(url("assets/slider-selected-dark.png"), url("assets/slider-selected-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider-selected.png"), url("assets/slider-selected@2.png")); }
 
 row:selected scale slider:hover {
-  background-image: -gtk-scaled(url("assets/slider-hover-selected-dark.png"), url("assets/slider-hover-selected-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider-hover-selected.png"), url("assets/slider-hover-selected@2.png")); }
 
 row:selected scale slider:disabled {
-  background-image: -gtk-scaled(url("assets/slider-insensitive-selected-dark.png"), url("assets/slider-insensitive-selected-dark@2.png")); }
+  background-image: -gtk-scaled(url("assets/slider-insensitive-selected.png"), url("assets/slider-insensitive-selected@2.png")); }
 
 
 progressbar {
@@ -1789,9 +1786,10 @@ decoration {
     border: solid 1px @border_color;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.15); }
 
+
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
-  padding: 0 4px;
+  padding: 0 5px;
   min-width: 0;
   min-height: 0;
   margin: 0; }
@@ -1813,74 +1811,43 @@ headerbar button.titlebutton,
   headerbar button.titlebutton:backdrop,
   .titlebar button.titlebutton:backdrop {
     color: @wm_unfocused_title; }
-  headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
+
+  headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close,
+  headerbar button.titlebutton.maximize,
   .titlebar button.titlebutton.maximize,
+  headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.minimize {
     color: transparent;
     border-image: none;
     box-shadow: none;
     background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/titlebutton-dark.png"), url("assets/titlebutton-dark@2.png")); }
-    headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
-    .titlebar button.titlebutton.close:backdrop,
-    .titlebar button.titlebutton.maximize:backdrop,
-    .titlebar button.titlebutton.minimize:backdrop {
-      background-image: -gtk-scaled(url("assets/titlebutton-unfocused-dark.png"), url("assets/titlebutton-unfocused-dark@2.png")); }
-  headerbar button.titlebutton.close:hover,
-  .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
-  headerbar button.titlebutton.close:active,
-  .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
-  headerbar button.titlebutton.maximize:hover,
-  .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover-dark.png"), url("assets/titlebutton-maximize-hover-dark@2.png")); }
-  headerbar button.titlebutton.maximize:active,
-  .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-maximize-active-dark.png"), url("assets/titlebutton-maximize-active-dark@2.png")); }
-  headerbar button.titlebutton.minimize:hover,
-  .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover-dark.png"), url("assets/titlebutton-minimize-hover-dark@2.png")); }
-  headerbar button.titlebutton.minimize:active,
-  .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
+    background-repeat: no-repeat; }
 
-headerbar.selection-mode button.titlebutton.close, headerbar.selection-mode button.titlebutton.maximize, headerbar.selection-mode button.titlebutton.minimize,
-.titlebar.selection-mode button.titlebutton.close,
-.titlebar.selection-mode button.titlebutton.maximize,
-.titlebar.selection-mode button.titlebutton.minimize {
-  background-image: -gtk-scaled(url("assets/titlebutton-dark.png"), url("assets/titlebutton-dark@2.png")); }
-  headerbar.selection-mode button.titlebutton.close:backdrop, headerbar.selection-mode button.titlebutton.maximize:backdrop, headerbar.selection-mode button.titlebutton.minimize:backdrop,
-  .titlebar.selection-mode button.titlebutton.close:backdrop,
-  .titlebar.selection-mode button.titlebutton.maximize:backdrop,
-  .titlebar.selection-mode button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-unfocused-dark.png"), url("assets/titlebutton-unfocused-dark@2.png")); }
+  headerbar button.titlebutton.close,
+  .titlebar button.titlebutton.close {
+    background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png")); }
 
-headerbar.selection-mode button.titlebutton.close:hover,
-.titlebar.selection-mode button.titlebutton.close:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
+  headerbar button.titlebutton.close:hover:not(:active),
+  .titlebar button.titlebutton.close:hover:not(:active) {
+    background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png")); }
 
-headerbar.selection-mode button.titlebutton.close:active,
-.titlebar.selection-mode button.titlebutton.close:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
+  headerbar button.titlebutton.maximize,
+  .titlebar button.titlebutton.maximize {
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"), url("assets/titlebutton-maximize@2.png")); }
 
-headerbar.selection-mode button.titlebutton.maximize:hover,
-.titlebar.selection-mode button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover-dark.png"), url("assets/titlebutton-maximize-hover-dark@2.png")); }
+  headerbar button.titlebutton.maximize:hover:not(:active),
+  .titlebar button.titlebutton.maximize:hover:not(:active) {
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png")); }
 
-headerbar.selection-mode button.titlebutton.maximize:active,
-.titlebar.selection-mode button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-active-dark.png"), url("assets/titlebutton-maximize-active-dark@2.png")); }
+  headerbar button.titlebutton.minimize,
+  .titlebar button.titlebutton.minimize {
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"), url("assets/titlebutton-minimize@2.png")); }
 
-headerbar.selection-mode button.titlebutton.minimize:hover,
-.titlebar.selection-mode button.titlebutton.minimize:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover-dark.png"), url("assets/titlebutton-minimize-hover-dark@2.png")); }
+  headerbar button.titlebutton.minimize:hover:not(:active),
+  .titlebar button.titlebutton.minimize:hover:not(:active) {
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png")); }
 
-headerbar.selection-mode button.titlebutton.minimize:active,
-.titlebar.selection-mode button.titlebutton.minimize:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
 .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus, .view text:selected, iconview text:selected,
 textview text:selected, iconview text:selected:focus,
@@ -2005,7 +1972,7 @@ iconview.source-list:selected:focus,
 
 
 .h1 {
-  font-size: 24px; 
+  font-size: 24px;
   font-family: open sans; }
 
 .h2 {
@@ -2030,9 +1997,8 @@ list .h4 {
   padding-left: 6px; }
 
 .panel {
-  background-color: transparent;
+  background-color: @theme_bg_color;
   color: white;
-  font-weight: bold;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   -gtk-icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
