@@ -245,7 +245,7 @@ button {
     text-shadow: none;
     -gtk-icon-shadow: none; }
     button:disabled > label, button:disabled label {
-      color: inherit; }
+      color: @insensitive_fg_color; }
     button:disabled:active, button:disabled:checked {
       color: rgba(255, 255, 255, 0.7);
       background-image: linear-gradient(to bottom, #3a3b3b, #3f4141);
