@@ -30,7 +30,7 @@ style "default"
 
     GtkEntry::cursor_aspect_ratio                = 0.1
     GtkEntry::cursor_aspect_ratio                = 0.1
-    
+
     GtkNotebook::tab-curvature = 20 # min width
 
     xthickness             = 1
@@ -155,9 +155,3 @@ style "titlebar"
 widget "xfwm"                      style "titlebar"
 class "MetaFrames"                 style "titlebar"
 widget_class "MetaFrames"          style "titlebar"
-
-style "xfce-tasklist-style"
-{
-	XfceTasklist::max-button-length = 130
-}
-class "XfceTasklist" style "xfce-tasklist-style"
