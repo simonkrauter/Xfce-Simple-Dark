@@ -14,7 +14,7 @@ The window decoration theme is created from scratch. It exists in different size
 Screenshot
 ------------
 
-<a href="https://github.com/trustable-code/Xfce-Simple-Dark/blob/master/screenshot.png"><img src="https://raw.githubusercontent.com/trustable-code/Xfce-Simple-Dark/master/screenshot.png" width="500"></a>
+<a href="https://github.com/trustable-code/Xfce-Simple-Dark/blob/master/screenshot.png"><img src="https://raw.githubusercontent.com/trustable-code/Xfce-Simple-Dark/master/screenshot.png" width="700"></a>
 
 
 Installation
