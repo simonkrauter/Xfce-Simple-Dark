@@ -8,7 +8,7 @@ Xfce-Simple-Dark is a set of dark themes for:
 
 The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .<br>
 The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .<br>
-The window title theme is based on Makulu Black.
+The window decoration theme is created from scratch. It exists in different sizes of the window decoration to support HiDPI environments.
 
 
 Screenshot
@@ -27,8 +27,8 @@ Installation
 
 ### Xfce window decoration theme
 
-1. Copy the folders beginning with `Xfce-Simple-Dark_xfwm` to your `~/.themes/` directory.
-2. Open the *Window Manager* application (`xfwm4-settings`) and select the theme.
+1. Copy the folders beginning with `Xfce-Simple-Dark_xfwm` to your `~/.themes/` directory. The different folders are for different sizes of the window decoration.
+2. Open the *Window Manager* application (`xfwm4-settings`) and select the theme in the desired size.
 
 ### Geany theme
 
