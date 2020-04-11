@@ -20,19 +20,37 @@ Screenshot
 Installation
 ------------
 
-### Xfce widgets theme
+Either install the AUR package [`xfce-simple-dark`](https://aur.archlinux.org/packages/xfce-simple-dark/) or copy the files manually.
 
-1. Copy the folder `Xfce-Simple-Dark_widgets` to your `~/.themes/` directory.
-2. Open the *Appearance* application (`xfce4-appearance-settings`) and select the theme.
 
-### Xfce window decoration theme
+### Copying the files manually
 
-1. Copy the folders beginning with `Xfce-Simple-Dark_xfwm` to your `~/.themes/` directory. The different folders are for different sizes of the window decoration.
-2. Open the *Window Manager* application (`xfwm4-settings`) and select the theme in the desired size.
+#### Xfce widgets theme
 
-### Geany theme
+Copy the folder `Xfce-Simple-Dark_widgets` to your `~/.themes/` directory.
+
+#### Xfce window decoration theme
+
+Copy the folders beginning with `Xfce-Simple-Dark_xfwm` to your `~/.themes/` directory. The different folders are for different sizes of the window decoration.
+
+#### Geany theme
 
 Copy the file `geany/simple-dark.conf` to `~/.config/geany/colorschemes/`.
+
+
+### Activating the themes
+
+#### Xfce widgets theme
+
+Open the *Appearance* application (`xfce4-appearance-settings`) and select the theme.
+
+#### Xfce window decoration theme
+
+Open the *Window Manager* application (`xfwm4-settings`) and select the theme in the desired size.
+
+#### Geany theme
+
+In Geany, choose `View`, `Change color scheme...` and select the theme.
 
 
 How to turn off auto-hiding of scrollbars
