@@ -61,6 +61,12 @@ Add the following line to the file `~/.xprofile` respectively `~/.profile` and r
 `export GTK_OVERLAY_SCROLLING=0`
 
 
+How to turn off client side window decorations
+----------------------------------------------
+
+Install [`gtk3-nocsd`](https://github.com/PCMan/gtk3-nocsd).
+
+
 License
 -------
 
