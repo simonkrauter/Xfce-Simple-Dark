@@ -2067,3 +2067,6 @@ list .h4 {
 .right .shadow-block {
   background-color: transparent;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent); }
+
+/* Window Buttons (Tasklist) button size */
+* { -XfceTasklist-max-button-length: 250; }
