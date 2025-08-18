@@ -2,12 +2,12 @@ Xfce-Simple-Dark
 ================
 
 Xfce-Simple-Dark is a set of dark themes for:
-- Xfce widgets,
-- Xfce window decoration and
-- Geany.<br>
+- GTK 2.0, 3.0 and 3.20 (GUI toolkit)
+- Xfwm4 (window manager)
+- Geany (text editor)
 
-The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .<br>
-The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .<br>
+The GTK 2.0 and GTK 3.0 theme is based on https://github.com/vkuzel/Xfce-darkness .<br>
+The GTK 3.20 theme is based on https://github.com/horst3180/vertex-theme .<br>
 The window decoration theme is created from scratch. It exists in different sizes of the window decoration to support HiDPI environments.
 
 
@@ -29,7 +29,7 @@ Either install the AUR package [`xfce-simple-dark`](https://aur.archlinux.org/pa
 
 Copy the folder `Xfce-Simple-Dark_widgets` to your `~/.themes/` directory.
 
-#### Xfce window decoration theme
+#### Xfce window manager theme
 
 Copy the folders beginning with `Xfce-Simple-Dark_xfwm` to your `~/.themes/` directory. The different folders are for different sizes of the window decoration.
 
@@ -44,7 +44,7 @@ Copy the file `geany/simple-dark.conf` to `~/.config/geany/colorschemes/`.
 
 Open the *Appearance* application (`xfce4-appearance-settings`) and select the theme.
 
-#### Xfce window decoration theme
+#### Xfce window manager theme
 
 Open the *Window Manager* application (`xfwm4-settings`) and select the theme in the desired size.
 
